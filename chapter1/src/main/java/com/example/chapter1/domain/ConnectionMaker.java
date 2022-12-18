@@ -1,2 +1,8 @@
-package com.example.chapter1.domain;public class ConnectionMaker {
+package com.example.chapter1.domain;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+public interface ConnectionMaker {
+    public Connection makeConnection() throws ClassNotFoundException, SQLException;
 }
